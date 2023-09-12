@@ -1,0 +1,256 @@
+:root {
+  --primary: #131e3a;
+  --secondary: white;
+  --tertiary: #377e23;
+  --gray: #f2f2f2;
+  --bg: #e7e7e9;
+  --radius: 8px;
+  --radius-sm: 3px;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Inter", sans-serif;
+  color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+  transition: color 0.25s ease, border 0.25s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--tertiary);
+  border-bottom: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--secondary);
+
+  background-image: url("../images/garibaldi_mountain.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 10rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0;
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  header h1 {
+    font-size: 5rem;
+  }
+
+  header p {
+    font-size: 1.5rem;
+  }
+}
+
+header p {
+  width: 75%;
+}
+
+main {
+  margin-inline: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    margin-inline: 10rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  main {
+    margin-inline: 20rem;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  main {
+    margin-inline: 35rem;
+  }
+}
+
+section {
+  padding-top: 3rem;
+}
+
+.details-section {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.details-section .logo {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  text-align: center;
+  gap: 1rem;
+}
+
+.announcement {
+  background: var(--gray);
+  margin-top: 2rem;
+  box-shadow: 0px 2.41233px 16.2832px -7.84006px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  border-radius: var(--radius);
+}
+
+.announcement p {
+  max-width: 650px;
+}
+
+.announcement h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.announcement h2 a {
+  text-decoration: none;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .details-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .announcement {
+    background: none;
+    box-shadow: none;
+  }
+}
+
+.pin-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 0.5rem;
+  color: var(--primary);
+}
+
+.address {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.address-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.questions-section {
+  margin-bottom: 4rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .questions-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-form {
+    min-width: 620px;
+  }
+}
+
+.questions h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.questions p {
+  color: var(--primary);
+  opacity: 0.8;
+  width: 220px;
+}
+
+.contact-form {
+  background-color: var(--secondary);
+  border-radius: var(--radius);
+  box-shadow: 0px 2.41233px 16.2832px -7.84006px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+}
+
+.form-group {
+  margin: 1rem;
+}
+
+.name-email-group {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+
+input,
+textarea {
+  display: block;
+  border: none;
+  background: var(--gray);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  width: 95%;
+  transition: outline 0.25s ease, background-color 0.25s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: var(--primary);
+  background-color: var(--bg);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.submit-button {
+  background: var(--primary);
+  color: var(--secondary);
+  border-radius: var(--radius-sm);
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  transition: opacity 0.25s ease, scale 0.25s ease-in-out;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  scale: 1.02;
+}
