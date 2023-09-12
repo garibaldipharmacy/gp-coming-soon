@@ -124,6 +124,7 @@ section {
 
 .announcement p {
   max-width: 650px;
+  line-height: 1.75;
 }
 
 .announcement h2 {
@@ -225,6 +226,7 @@ textarea {
   border-radius: var(--radius-sm);
   width: 95%;
   transition: outline 0.25s ease, background-color 0.25s ease;
+  resize: none;
 }
 
 input:focus,
