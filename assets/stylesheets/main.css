@@ -2,6 +2,7 @@
   --primary: #131e3a;
   --secondary: white;
   --tertiary: #377e23;
+  --tertiary-light: #e9f1e7;
   --gray: #f2f2f2;
   --bg: #e7e7e9;
   --radius: 8px;
@@ -255,4 +256,40 @@ label {
   cursor: pointer;
   opacity: 0.9;
   scale: 1.02;
+}
+
+.update {
+  background: var(--tertiary-light);
+  border: 2px solid var(--tertiary);
+  width: 650px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.update h3 {
+  background: var(--tertiary);
+  padding: 1rem;
+  color: var(--tertiary-light);
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  margin-block: 0;
+  display: flex;
+}
+
+.update .date {
+  margin-left: auto;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.update-content {
+  padding: 1rem;
+}
+
+.update p {
+  margin-top: 0;
+}
+
+.update p:last-child {
+  margin-bottom: 0;
 }
