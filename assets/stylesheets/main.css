@@ -261,9 +261,14 @@ label {
 .update {
   background: var(--tertiary-light);
   border: 2px solid var(--tertiary);
-  width: 650px;
   margin: 0 auto;
   margin-top: 3rem;
+}
+
+@media screen and (min-width: 825px) {
+  .update {
+    width: 650px;
+  }
 }
 
 .update h3 {
