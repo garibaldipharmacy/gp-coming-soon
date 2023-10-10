@@ -228,17 +228,13 @@ textarea {
   width: 95%;
   transition: outline 0.25s ease, background-color 0.25s ease;
   resize: none;
+  margin-top: 0.5rem;
 }
 
 input:focus,
 textarea:focus {
   outline-color: var(--primary);
   background-color: var(--bg);
-}
-
-label {
-  display: block;
-  margin-bottom: 0.5rem;
 }
 
 .submit-button {
@@ -293,6 +289,7 @@ label {
 
 .update p {
   margin-top: 0;
+  line-height: 1.75;
 }
 
 .update p:last-child {
