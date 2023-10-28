@@ -1,5 +1,6 @@
 :root {
   --primary: #131e3a;
+  --primary-light: #e7e8eb;
   --secondary: white;
   --tertiary: #377e23;
   --tertiary-light: #e9f1e7;
@@ -255,10 +256,18 @@ textarea:focus {
 }
 
 .update {
-  background: var(--tertiary-light);
-  border: 2px solid var(--tertiary);
   margin: 0 auto;
   margin-top: 3rem;
+}
+
+.update__old {
+  background: var(--primary-light);
+  border: 2px solid var(--primary);
+}
+
+.update__main {
+  background: var(--tertiary-light);
+  border: 2px solid var(--tertiary);
 }
 
 @media screen and (min-width: 825px) {
@@ -268,13 +277,18 @@ textarea:focus {
 }
 
 .update h3 {
-  background: var(--tertiary);
+  background: var(--primary);
+  color: var(--gray);
   padding: 1rem;
-  color: var(--tertiary-light);
   font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   margin-block: 0;
   display: flex;
+}
+
+.update__main h3 {
+  background: var(--tertiary);
+  color: var(--tertiary-light);
 }
 
 .update .date {
@@ -294,4 +308,13 @@ textarea:focus {
 
 .update p:last-child {
   margin-bottom: 0;
+}
+
+.more-updates {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.update__old:last-child {
+  margin-bottom: 5rem;
 }
