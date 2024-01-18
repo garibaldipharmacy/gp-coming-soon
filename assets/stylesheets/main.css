@@ -61,6 +61,16 @@ header {
   text-align: center;
 }
 
+.lower-header a {
+  border: none;
+}
+
+.lower-header {
+  position: sticky;
+  top: 0;
+  box-shadow: -5px -6px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
 .upper-header {
   background: #141e39;
   display: flex;
@@ -312,10 +322,6 @@ textarea:focus {
 
   .lower-header {
     text-align: left;
-  }
-
-  .lower-header a {
-    border: none;
   }
 
   header {
